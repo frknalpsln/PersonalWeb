@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PersonalWeb.DataAccess\PersonalWeb.DataAccess.csproj" />
+    <ProjectReference Include="..\PersonalWeb.Entities\PersonalWeb.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\SkillEntity\Command\CreateSkill\" />
+    <Folder Include="Features\SkillEntity\Command\RemoveSkill\" />
+    <Folder Include="Features\SkillEntity\Command\UpdateSkill\" />
+    <Folder Include="Features\SkillEntity\Query\GetAllSkill\" />
+    <Folder Include="Features\SkillEntity\Query\GetByIdSkill\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="TS.Result" Version="8.0.8" />
+  </ItemGroup>
+
+</Project>

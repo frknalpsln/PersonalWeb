@@ -1,0 +1,6 @@
+@PersonelWeb.API_HostAddress = http://localhost:5036
+
+GET {{PersonelWeb.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
