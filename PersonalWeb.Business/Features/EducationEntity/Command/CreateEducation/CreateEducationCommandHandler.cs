@@ -2,6 +2,7 @@
 using MediatR;
 using PersonalWeb.Business.Abstract;
 using PersonalWeb.Entities.Concrete;
+using System.Globalization;
 using TS.Result;
 
 namespace PersonalWeb.Business.Features.EducationEntity.Command.CreateEducation
@@ -10,7 +11,7 @@ namespace PersonalWeb.Business.Features.EducationEntity.Command.CreateEducation
        IMapper _mapper) : IRequestHandler<CreateEducationCommand, Result<string>>
     {
         public async Task<Result<string>> Handle(CreateEducationCommand request, CancellationToken cancellationToken)
-        {
+        {           
             Education education = _mapper.Map<Education>(request);
             await _educationServices.AddAsync(education);
             await _educationServices.SaveAsync();

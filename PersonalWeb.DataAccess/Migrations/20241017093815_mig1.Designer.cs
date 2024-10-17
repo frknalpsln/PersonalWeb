@@ -12,7 +12,7 @@ using PersonalWeb.DataAccess.Concrete;
 namespace PersonalWeb.DataAccess.Migrations
 {
     [DbContext(typeof(PersonalWebDbContext))]
-    [Migration("20241016124729_mig1")]
+    [Migration("20241017093815_mig1")]
     partial class mig1
     {
         /// <inheritdoc />
